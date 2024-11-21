@@ -5,7 +5,7 @@ require_once('../crud_biblioteca/clases/Libro.php');
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Consultar el estudiante actual
+   
     $sql = "SELECT * FROM libro WHERE id = $id";
     $resultado = mysqli_query($conexion, $sql);
     $libroData = mysqli_fetch_assoc($resultado);
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Añodepublicacion = $_POST['Añodepublicacion'];
     $Genero = $_POST['Genero'];
 
-    // Crear instancia y actualizar estudiante
+  
     $libro = new Libro($conexion, $Titulo, $Autor, $Editorial, $Añodepublicacion , $Genero );
     $libro->actualizarLibro($id);
 
@@ -65,4 +65,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
-
+##### luis enrique
