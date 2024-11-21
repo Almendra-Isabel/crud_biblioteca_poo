@@ -5,7 +5,6 @@ require_once('../crud_biblioteca/clases/Libro.php');
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Crear instancia y eliminar estudiante
     $libro = new Libro($conexion);
     $libro->eliminarLibro($id);
 
