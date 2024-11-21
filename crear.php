@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $Titulo = $_POST['Titulo'];
     $Autor = $_POST['Autor'];
     $Editorial = $_POST['Editorial'];
-    $Añodepublicacion = $_POST['Añodepublicacion'];
+    $anio_publicacion = $_POST['anio_publicacion'];
     $Genero = $_POST['Genero'];
 
-    $libro = new Libro($conexion, $Titulo, $Autor,  $Editorial, $Añodepublicacion, $Genero);
+    $libro = new Libro($conexion, $Titulo, $Autor,  $Editorial, $anio_publicacion, $Genero);
     $libro->registrarLibro();
 }
 ?>
@@ -41,8 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" class="form-control" name="Editorial" placeholder="Editorial" required>
         </div>
         <div class="mb-3">
-            <label for="Añodepublicacion" class="form-label">Año de publicación</label>
-            <input type="text" class="form-control" name="Añodepublicacion" placeholder="Añodepublicacion" required>
+            <label for="anio_publicacion" class="form-label">Año de publicación</label>
+            <input type="text" class="form-control" name="anio_publicacion" placeholder="anio_publicacion" required>
         </div>
         <div class="mb-3">
             <label for="Genero" class="form-label">Género</label>
