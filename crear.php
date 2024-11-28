@@ -5,13 +5,13 @@ require_once('../crud_biblioteca/clases/Libro.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
-    $Titulo = $_POST['Titulo'];
+    $titulo = $_POST['titulo'];
     $Autor = $_POST['Autor'];
     $Editorial = $_POST['Editorial'];
     $anio_publicacion = $_POST['anio_publicacion'];
     $Genero = $_POST['Genero'];
 
-    $libro = new Libro($conexion, $Titulo, $Autor,  $Editorial, $anio_publicacion, $Genero);
+    $libro = new Libro($conexion, $titulo, $Autor,  $Editorial, $anio_publicacion, $Genero);
     $libro->registrarLibro();
 }
 ?>
@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h1 class="text-center p-5">Registrar Libro</h1>
     <form method="POST" class="w-50 mx-auto">
         <div class="mb-3">
-            <label for="Titulo" class="form-label">Título</label>
-            <input type="text" class="form-control" name="Titulo" placeholder="Titulo" required>
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" name="titulo" placeholder="titulo" required>
         </div>
         <div class="mb-3">
             <label for="Autor" class="form-label">Autor</label>
