@@ -48,7 +48,6 @@ class Libro{
         }
     }
 
-    // Método para eliminar un estudiante
     public function eliminarLibro($id)
     {
         $sql = "DELETE FROM libro WHERE id=$id";
