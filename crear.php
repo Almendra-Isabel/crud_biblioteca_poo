@@ -48,10 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="Genero" class="form-label">Género</label>
             <input type="text" class="form-control" name="Genero" placeholder="Genero" required>
         </div>
-        <div class="mb-3">
-            <label for="Genero" class="form-label">Género</label>
-            <input type="text" class="form-control" name="Genero" placeholder="Genero" required>
-        </div>
         <div>
             <button type="submit" class="btn btn-primary">Registrar</button>
             <a href="index.php" class="btn btn-secondary">Lista de Libros</a>
