@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $libro = new Libro($conexion, $Titulo, $Autor, $Editorial, $Añodepublicacion , $Genero );
     $libro->actualizarLibro($id);
 
-    header("Location: index.php"); // Redirige al índice después de editar
+    header("Location: index.php");
 }
 ?>
 
