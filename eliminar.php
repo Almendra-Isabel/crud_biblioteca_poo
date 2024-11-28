@@ -8,6 +8,6 @@ if (isset($_GET['id'])) {
     $libro = new Libro($conexion);
     $libro->eliminarLibro($id);
 
-    header("Location: index.php"); // Redirige al índice después de eliminar
+    header("Location: index.php");
 }
 ?>
